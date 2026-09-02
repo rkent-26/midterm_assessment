@@ -56,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 14),
                         const Text(
-                          'YourApp',
+                          'FillForm',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
