@@ -47,14 +47,12 @@ class WelcomeScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(14),
                           ),
                           alignment: Alignment.center,
-                          child: const Text(
-                            'A',
-                            style: TextStyle(
-                              color: kViolet,
-                              fontSize: 24,
-                              fontWeight: FontWeight.w700,
+                          child: Image.asset(
+                              'assets/images/logo.PNG',
+                              width: 90,
+                              height: 90,
+                              fit: BoxFit.contain,
                             ),
-                          ),
                         ),
                         const SizedBox(height: 14),
                         const Text(
