@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
 import 'welcome_screen.dart';
 
+// StatelessWidget: root of the app, doesn't hold changing data
 void main() {
-  runApp(const YourApp());
+  runApp(const MyApp());
 }
 
-class YourApp extends StatelessWidget {
-  const YourApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'YourApp',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: kViolet,
-        fontFamily: 'Roboto',
-      ),
+      // TODO: UI/Theming team plugs in ThemeData(...) here
+      title: 'Registration App',
       home: const WelcomeScreen(),
     );
   }

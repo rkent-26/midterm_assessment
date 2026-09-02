@@ -9,6 +9,7 @@ const Color kBorder = Color(0xFFE5E7EB);
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
+
   static const _features = ['mabilis', 'cutie', 'secured'];
 
   @override
@@ -22,6 +23,7 @@ class WelcomeScreen extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
+                //image bg
                 Opacity(
                   opacity: 0.14,
                   child: Image.asset(
@@ -45,19 +47,18 @@ class WelcomeScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(14),
                           ),
                           alignment: Alignment.center,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: Image.asset(
-                              'assets/images/logo.PNG',
-                              width: 90,
-                              height: 90,
-                              fit: BoxFit.contain,
+                          child: const Text(
+                            'A',
+                            style: TextStyle(
+                              color: kViolet,
+                              fontSize: 24,
+                              fontWeight: FontWeight.w700,
                             ),
                           ),
                         ),
                         const SizedBox(height: 14),
                         const Text(
-                          'FillForm',
+                          'YourApp',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -72,6 +73,7 @@ class WelcomeScreen extends StatelessWidget {
               ],
             ),
           ),
+
           Expanded(
             flex: 7,
             child: Container(
@@ -109,7 +111,9 @@ class WelcomeScreen extends StatelessWidget {
                           color: kTextMuted,
                         ),
                       ),
+
                       const SizedBox(height: 26),
+
                       Container(
                         width: double.infinity,
                         padding: const EdgeInsets.all(16),
@@ -157,7 +161,10 @@ class WelcomeScreen extends StatelessWidget {
                           }),
                         ),
                       ),
+
                       const Spacer(),
+
+                      //get started button to continue to reg page
                       SizedBox(
                         width: double.infinity,
                         height: 52,
@@ -188,7 +195,9 @@ class WelcomeScreen extends StatelessWidget {
                           ),
                         ),
                       ),
+
                       const SizedBox(height: 14),
+
                       GestureDetector(
                         onTap: () {},
                         child: RichText(
